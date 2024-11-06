@@ -3,153 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Sidebar/menu -->
-    <nav>
-        <h3>Company Name</h3>
-        <a href="#showcase">Home</a>
-        <a href="#services">Showcase</a>
-        <a href="#designers">Services</a>
-        <a href="#packages">Designers</a>
-        <a href="#contact">Packages</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header id="container">
+        <nav id="navbar">
+            <ul>
+                <h1><span>your</span> website</h1>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn nav-btn">let's talk</button>
+        </nav>
 
-    <header>
-        <span>Company Name</span>
-        <input type="checkbox" id="menu-toggle">
+        <section id="main-section">
+            <h1>Hi, I'm <span>Student Name</span></h1>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quaerat deleniti harum cum reprehenderit quas.</p>
+            <button class="btn">hire me</button>
+            <button class="btn sec-btn">see projects</button>
+        </section>
+
+        <div id="box-container">
+            <div class="box">
+                <img src="imgs/icon-1.png" alt="HTML5">
+                <h1>HTML</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae, officia similique quaerat totam nisi aspernatur dolorum aperiam maxime esse.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="box">
+                <img src="imgs/icon-2.png" alt="CSS">
+                <h1>CSS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae, officia similique quaerat totam nisi aspernatur dolorum aperiam maxime esse.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="box">
+                <img src="imgs/icon-3.png" alt="Javascript">
+                <h1>Javascript</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae, officia similique quaerat totam nisi aspernatur dolorum aperiam maxime esse.</p>
+                <a href="#">Read More</a>
+            </div>
+        
+        </div>
     </header>
 
-    <div class="main">
-
-        <div id="showcase">
-            <h1>Interior Design</h1>
-            <h2>Showcase.</h2>
-            <hr>
-        </div>
-
-        <div class="photo-grid">
-            <a href="imgs/img1.jpg"><img id="img1" src="imgs/img1.jpg"></a>
-            <a href="imgs/img2.jpg"><img id="img2" src="imgs/img2.jpg"></a>
-            <a href="imgs/img3.jpg"><img id="img3" src="imgs/img3.jpg"></a>
-            <a href="imgs/img4.jpg"><img id="img4" src="imgs/img4.jpg"></a>
-            <a href="imgs/img5.jpg"><a id="img5" src="imgs/img5.jpg"></a>
-            <a href="imgs/img6.jpg"><a id="img5" src="imgs/img6.jpg"></a>
-        </div>
-
-        <div class="modal" id="modal">
-            <a href="#close" class="close">&times;</a>
-            <img id="img01" class="modal-image">
-        </div>
-
-        <div class="section" id="services">
-            <h1>Services.</h1>
-            <hr>
-            <p>We are an interior design service that focuses on what's best for your home and what's best for you!</p>
-            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
-                elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt
-                mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-            </p>
-        </div>
-
-        <!-- Designers section -->
-        <div class="section" id="designers">
-            <h1>Designers.</h1>
-            <hr>
-            <p>The best team in the world.</p>
-            <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="team">
-                <div class="team-member">
-                    <img src="imgs/team1.jpg">
-                    <h3>John Doe</h3>
-                    <p>CEO & Founder</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="team-member">
-                    <img src="imgs/team2.jpg">
-                    <h3>Jane Doe</h3>
-                    <p>Designer</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="team-member">
-                    <img src="imgs/team3.jpg">
-                    <h3>Mike Ross</h3>
-                    <p>Architect</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Packages section -->
-        <div class="sections" id="packages">
-            <h1>Packages.</h1>
-            <hr>
-            <div class="package">
-                <h2>Basic</h2>
-                <p>Floorplanning</p>
-                <p>10 hours support</p>
-                <p>Photography</p>
-                <p>20% furniture discount</p>
-                <h2>$199</h2>
-                <button>Sign Up</button>
-            </div>
-            <div class="package">
-                <h2>Pro</h2>
-                <p>Floorplanning</p>
-                <p>50 hours support</p>
-                <p>Photography</p>
-                <p>50% furniture discount</p>
-                <h2>$249</h2>
-                <button>Sign Up</button>
-            </div>
-        </div>
-
-        <!-- Contact section -->
-        <div class="section" id="contact">
-            <h1>Contact.</h1>
-            <hr>
-            <p>Do you want us to style your home? Fill out the form with details!</p>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" name="Name" required>
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" name="Email" required>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea name="Message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
-    </div>
 </body>
 
 </html>
