@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBB - Dashboard Page</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+    <link rel="stylesheet" href="./css/dashboardPageStyle.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+
+    <header id="navigation">
+        <nav id="navbar">
+            <a href="./index.html" class="logo"><img src="./images/Logo.png" alt="NBB - Logo"></a>
+
+            <ul class="main tabList">
+                <li><a href="./index.html" class="tab">Home</a></li>
+                <li><a href="./aboutPage.html" class="tab">About</a></li>
+                <li><a href="./dashboardPage.html" class="tab">Check Dashboard</a></li>
+            </ul>
+            
+            <ul class="sec tabList">
+                <li><a href="./signPage.html" class="tab">Sign up</a></li>
+                <li><a href="./AdminPanel/adminPanel.html" class="tab admin-perms">Admin</a></li>
+            </ul>
+        </nav>
+
+        <nav id="sidenav">
+            <a href="./index.html" class="logo"><img src="./images/Logo.png" alt="NBB - Logo"></a>
+
+            <a id="openNavBtn" class="openList"><i class="fa-solid fa-bars"></i></a>
+
+            <ul class="tabList">
+                <li><a class="close" onclick="closeNav()"><i class="fa-solid fa-close"></i></a></li>
+                <li><a href="./index.html" class="tab">Home</a></li>
+                <li><a href="./aboutPage.html" class="tab">About</a></li>
+                <li><a href="./dashboardPage.html" class="tab">Check Dashboard</a></li>
+                
+                <hr>
+                
+                <li><a href="./signPage.html" class="tab">Sign up</a></li>
+                <li><a href="./AdminPanel/adminPanel.html" class="tab admin-perms">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header id="main-section">
+        <h1>WELCOME TO NBB</h1>
+        <h3>Check Your Dashboard Score by Entering Your National Number!</h3>
+        <input type="number" placeholder="Enter Your National Number." name="natNum" id="natNum">
+        <a class="dashBtn" id="getDashBtn">Get Result</a>
+
+        <table id="dashboard">
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Student Name:</th>
+                    <th class="theader">Student Score:</th>
+                    <th class="theader">Student Level:</th>
+                    <th class="theader">Percentage:</th>
+                    <th class="theader">Violations:</th>
+                    <th class="theader">Bad Behavior:</th>
+                    <th class="theader">Absence:</th>
+                    <th class="theader">Total Minus:</th>
+                </tr>
+            </thead>
+            <tbody class="table-values">
+                <tr>
+                    <td class="tvalue" id="name">Null</td>
+                    <td class="tvalue" id="score">None</td>
+                    <td class="tvalue" id="level">None</td>
+                    <td class="tvalue" id="percentage">None</td>
+                    <td class="tvalue" id="violations">None</td>
+                    <td class="tvalue" id="behavior">None</td>
+                    <td class="tvalue" id="absence">None</td>
+                    <td class="tvalue" id="minus">None</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="res1000-dashboard">
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Student Name:</th>
+                    <th class="theader">Student Score:</th>
+                    <th class="theader">Student Level:</th>
+                    <th class="theader">Percentage:</th>
+                </tr>
+            </thead>
+            <tbody class="table-values">
+                <tr>
+                    <td class="tvalue" id="name">Null</td>
+                    <td class="tvalue" id="score">None</td>
+                    <td class="tvalue" id="level">None</td>
+                    <td class="tvalue" id="percentage">None</td>
+                    
+                </tr>
+            </tbody>
+
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Violations:</th>
+                    <th class="theader">Bad Behavior:</th>
+                    <th class="theader">Absence:</th>
+                    <th class="theader">Total Minus:</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-values">
+                <td class="tvalue" id="violations">None</td>
+                <td class="tvalue" id="behavior">None</td>
+                <td class="tvalue" id="absence">None</td>
+                <td class="tvalue" id="minus">None</td>
+            </tbody>
+        </table>
+
+        <table id="res650-dashboard">
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Student Name:</th>
+                    <th class="theader">Student Score:</th>
+                </tr>
+            </thead>
+            <tbody class="table-values">
+                <tr>
+                    <td class="tvalue" id="name">Null</td>
+                    <td class="tvalue" id="score">None</td>
+                </tr>
+            </tbody>
+
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Student Level:</th>
+                    <th class="theader">Percentage:</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-values">
+                <td class="tvalue" id="level">None</td>
+                <td class="tvalue" id="percentage">None</td>
+            </tbody>
+
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Violations:</th>
+                    <th class="theader">Bad Behavior:</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-values">
+                <td class="tvalue" id="violations">None</td>
+                <td class="tvalue" id="behavior">None</td>
+            </tbody>
+
+            <thead class="table-headers">
+                <tr>
+                    <th class="theader">Absence:</th>
+                    <th class="theader">Total Minus:</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-values">
+                <td class="tvalue" id="absence">None</td>
+                <td class="tvalue" id="minus">None</td>
+            </tbody>
+        </table>
+
+    </header>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="topFooter">
+            <h3 class="cName">NBB - Notify Board For Business</h3>
+
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>&copy;2025 NBB, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/students.js"></script>
+<script>
+    document.getElementById("getDashBtn").addEventListener("click", function () {
+        const natNum = document.getElementById("natNum").value;
+        const student = students[natNum];
+
+        if (student) {
+            document.querySelectorAll("#name").forEach(el => el.textContent = student.name);
+            document.querySelectorAll("#score").forEach(el => el.textContent = student.score);
+            document.querySelectorAll("#level").forEach(el => el.textContent = student.level);
+            document.querySelectorAll("#percentage").forEach(el => el.textContent = student.percentage);
+            document.querySelectorAll("#violations").forEach(el => el.textContent = student.violations);
+            document.querySelectorAll("#behavior").forEach(el => el.textContent = student.behavior);
+            document.querySelectorAll("#absence").forEach(el => el.textContent = student.absence);
+            document.querySelectorAll("#minus").forEach(el => el.textContent = student.minus);
+        } else {
+            alert("Student not found!");
+        }
+    });
+</script>
+
+    
+</body>
+<script src="./js/navScript.js"></script>
+</html>
+
+<!-- Majesty was here :) -->

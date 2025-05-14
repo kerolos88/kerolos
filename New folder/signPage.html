@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBB - Sign Page</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+    <link rel="stylesheet" href="./css/signPageStyle.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+
+    <header id="navigation">
+        <nav id="navbar">
+            <a href="./index.html" class="logo"><img src="./images/Logo.png" alt="NBB - Logo"></a>
+
+            <ul class="main tabList">
+                <li><a href="./index.html" class="tab">Home</a></li>
+                <li><a href="./aboutPage.html" class="tab">About</a></li>
+                <li><a href="./dashboardPage.html" class="tab">Check Dashboard</a></li>
+            </ul>
+            
+            <ul class="sec tabList">
+                <li><a href="./signPage.html" class="tab">Sign up</a></li>
+                <li><a href="./AdminPanel/adminPanel.html" class="tab admin-perms">Admin</a></li>
+            </ul>
+        </nav>
+
+        <nav id="sidenav">
+            <a href="./index.html" class="logo"><img src="./images/Logo.png" alt="NBB - Logo"></a>
+
+            <a id="openNavBtn" class="openList"><i class="fa-solid fa-bars"></i></a>
+
+            <ul class="tabList">
+                <li><a class="close" onclick="closeNav()"><i class="fa-solid fa-close"></i></a></li>
+                <li><a href="./index.html" class="tab">Home</a></li>
+                <li><a href="./aboutPage.html" class="tab">About</a></li>
+                <li><a href="./dashboardPage.html" class="tab">Check Dashboard</a></li>
+                
+                <hr>
+                
+                <li><a href="./signPage.html" class="tab">Sign up</a></li>
+                <li><a href="./AdminPanel/adminPanel.html" class="tab admin-perms">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header id="main-section">
+        <section class="sign">
+            <h1>Sign</h1>
+            <input type="text" placeholder="Enter Username." name="username" id="username" required>
+            <input type="password" placeholder="Enter Password." name="username" id="username" required>
+            <button type="submit" class="signBtn">Sign in</button>
+        </section>
+    </header>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="topFooter">
+            <h3 class="cName">NBB - Notify Board For Business</h3>
+
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>&copy;2025 NBB, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- <footer>
+        <p>&copy;2025 NBB, All Rights Reserved.</p>
+    </footer> -->
+    
+</body>
+<script src="./js/navScript.js"></script>
+</html>
+
+<!-- Majesty was here :) -->
